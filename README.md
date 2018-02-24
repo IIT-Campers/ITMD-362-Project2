@@ -3,3 +3,4 @@
 # Collaborators:
 
 * David Delgado
+  Strengths: Semantic HTML and organized Javascript.
