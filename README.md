@@ -3,9 +3,15 @@
 ## Collaborators:
 
 ### David Delgado
-  HTML        [+++++++++ ]
+  HTML          [+++++++++ ]
     Semantic coder and frequent linter.
-  JavaScript  [+++++++++ ]
+  JavaScript    [+++++++++ ]
     Computer science background and intuitive.  Very informative in code notes.
-  CSS         [++++++    ]
-    Strong px to em conversion practice.  Very informative in code notes.
+  CSS           [++++++    ]
+    Strong px to em conversion practice.  Very informative in code notes.gs
+  Git Commits   [+++++++   ]
+
+  Code Comments [++++++++  ]
+
+  Responsive    [+++++++++ ]
+    Phone notification, but less responsive during the weekend.
