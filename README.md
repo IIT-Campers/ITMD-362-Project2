@@ -1,6 +1,11 @@
-# ITMD-362-Project2
+# ITMD 362 Project2
 
-# Collaborators:
+## Collaborators:
 
-* David Delgado
-  Strengths: Semantic HTML and organized Javascript.
+### David Delgado
+  HTML        [+++++++++ ]
+    Semantic coder and frequent linter.
+  JavaScript  [+++++++++ ]
+    Computer science background and intuitive.  Very informative in code notes.
+  CSS         [++++++    ]
+    Strong px to em conversion practice.  Very informative in code notes.
