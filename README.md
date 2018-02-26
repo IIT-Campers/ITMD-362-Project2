@@ -21,3 +21,12 @@
   Git Commits   | [+++++++++o] Semi-frequent commits, clear and concise messages.
   Code Comments | [++++++++oo] My comments are very good, but only are there when I feel the need to add them.
   Responsive    | [+++++++ooo] I respond instantly...if my phone feels like actually telling me. Occasionally, my phone will just crap out for periods of time.
+### Aurangzeb Razzaq
+Topic         | Skill level + Comments
+--------------|-----------------------
+HTML          | [+++++++++o] Semantic, very frequent linter.
+JavaScript    | [++++++oooo] Still learning how to be more proficient
+CSS           | [++++++++oo] Uses good practices, decently experienced with layouts
+Git Commits   | [+++++++++o] Semi-frequent commits, clear and concise messages.
+Code Comments | [++++++++oo] My comments short and concise, but only are there when I feel they are absolutely necessary.
+Responsive    | [++++++++++] I respond almost instantly provided my phone connects to IIT's Wi-Fi, my data plan mostly works too.
