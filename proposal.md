@@ -5,7 +5,7 @@
 
 ## Team Members
   [David Delgado](https://github.com/ddelgad5/ITMD-362-Project2/)
-  []()
+  [Aurangzeb Razzaq](https://github.com/aurangzebrazzaq/ITMD-362-Project2)
   []()
   []()
 
