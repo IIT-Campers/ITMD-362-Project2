@@ -5,6 +5,39 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
+/* Notes:
+	Scale:
+Base 22px
+    52.109px
+    2.369em
+    3.257em @ 16
+
+    39.092px
+    1.777em
+    2.443em @ 16
+
+    29.326px
+    1.333em
+    1.833em @ 16
+
+    22px
+    1em
+    1.375em @ 16
+
+    16.504px
+    0.75em
+    1.032em @ 16
+
+	Palette:
+Header    : #???
+Reading   : #???
+Light read: #???
+Background: #???
+Accent BG : #???
+Error BG  : #???
+Tile BG   : #???
+*/
+
 /* Semantic structure tags */
 html {
 }
