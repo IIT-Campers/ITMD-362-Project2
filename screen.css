@@ -5,11 +5,40 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
+/* Notes:
+	Scale:
+Base 16px
+Minor third
+~32px h1
+~28px h2
+~23px h3
+~19px h4, h5, h6
+~16px p and most other things
+~13px figcaption
+
+	Palette:
+Header    : #???
+Reading   : #CBF
+Light read: #???
+Background: #120
+Accent BG : #241
+Error BG  : #???
+Tile BG   : #???
+*/
+
 /* Semantic structure tags */
 html {
+  font-size: 1em; /* 16 / 16 */
+  line-height: 1.5em; /* 24 / 16 */
+  color: #CBF;
+  background-color: #120;
 }
 
 main {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #241;
 }
 
 article {
@@ -40,18 +69,27 @@ h3,
 h4,
 h5,
 h6 {
+  color: #C93;
 }
 
 h1 {
+  font-size: 2em; /* 32 / 16 */
+  line-height: 1.5em; /* 48 / 32 */
 }
 
 h2 {
+  font-size: 1.75em; /* 28 / 16 */
+  line-height: 1.42857em; /* 40 / 28 */
 }
 
 h3 {
+  font-size: 1.4375em; /* 23 / 16 */
+  line-height: 1.04348em; /* 24 / 23 */
 }
 
 h4, h5, h6 {
+  font-size: 1.1875em; /* 19 / 16 */
+  line-height: 1.26316em; /* 24 / 19 */
 }
 
 li {
@@ -61,6 +99,11 @@ input {
 }
 
 img {
+}
+
+figcaption {
+  font-size: 0.8125em; /* 13 / 16 */
+  line-height: 1.230769em; /* 16 / 13 */
 }
 
 /* Specific cases */
