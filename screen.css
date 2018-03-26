@@ -46,7 +46,7 @@ article {
 }
 
 section {
-  background-color:;
+  background: rgba(32, 64, 16, 0.6);
   padding: 0.75em;
   margin-bottom: 0.75em;
 }
