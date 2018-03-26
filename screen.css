@@ -29,6 +29,7 @@ Tile BG   : #???
 /* Semantic structure tags */
 html {
   font-size: 1em; /* 16 / 16 */
+  font-family: "PT Sans", sans-serif;
   line-height: 1.5em; /* 24 / 16 */
   color: #CBF;
   background-color: black;
@@ -114,7 +115,9 @@ figcaption {
 form ol,
 form ul {
 }
-
+footer {
+  text-align: center;
+}
 #search-form ul {
   display:inline-block;
   margin: 0;
