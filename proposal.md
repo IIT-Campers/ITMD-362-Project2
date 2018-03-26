@@ -7,7 +7,7 @@
   [David Delgado](https://github.com/ddelgad5/ITMD-362-Project2/)
   [Aurangzeb Razzaq](https://github.com/aurangzebrazzaq/ITMD-362-Project2)
   [Hugo Zamarripa](https://github.com/HugoZam/ITMD-362-Project2)
-  []()
+  [Cooper Van Kampen](https://github.com/coopervk/ITMD-362-Project2)
 
 ## Topic
   Our project 2 is based on recreating a reservation system for campsites.  Our project will work on resolving common issues that are experienced in current reservation sites such as:  
