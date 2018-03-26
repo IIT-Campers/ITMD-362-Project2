@@ -9,12 +9,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	Scale:
 Base 16px
 Minor third
-~32px
-~28px
-~23px
-~19px
-~16px
-~13px
+~32px h1
+~28px h2
+~23px h3
+~19px h4, h5, h6
+~16px p and most other things
+~13px figcaption
 
 	Palette:
 Header    : #???
@@ -68,25 +68,21 @@ h6 {
 h1 {
   font-size: 2em; /* 32 / 16 */
   line-height: 1.5em; /* 48 / 32 */
-  background-color: #F00; /* Debug color */
 }
 
 h2 {
   font-size: 1.75em; /* 28 / 16 */
   line-height: 1.42857em; /* 40 / 28 */
-  background-color: #0F0; /* Debug color */
 }
 
 h3 {
   font-size: 1.4375em; /* 23 / 16 */
   line-height: 1.04348em; /* 24 / 23 */
-  background-color: #00F; /* Debug color */
 }
 
 h4, h5, h6 {
   font-size: 1.1875em; /* 19 / 16 */
   line-height: 1.26316em; /* 24 / 19 */
-  background-color: #FF0; /* Debug color */
 }
 
 li {
@@ -96,6 +92,11 @@ input {
 }
 
 img {
+}
+
+figcaption {
+  font-size: 0.8125em; /* 13 / 16 */
+  line-height: 1.230769em; /* 16 / 13 */
 }
 
 /* Specific cases */
