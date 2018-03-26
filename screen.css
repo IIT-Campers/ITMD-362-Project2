@@ -31,7 +31,9 @@ html {
   font-size: 1em; /* 16 / 16 */
   line-height: 1.5em; /* 24 / 16 */
   color: #CBF;
-  background-color: #120;
+  background-color: black;
+  background-image: url("images/bgimage-1440x2560-9x16-portrait.jpg");
+  background-size: cover;
 }
 
 main {
@@ -44,7 +46,7 @@ article {
 }
 
 section {
-  background-color: #241;
+  background-color:;
   padding: 0.75em;
   margin-bottom: 0.75em;
 }
@@ -111,6 +113,39 @@ figcaption {
 /* Specific cases */
 form ol,
 form ul {
+}
+
+#search-form ul {
+  display:inline-block;
+  margin: 0;
+  width: 100%;
+  padding: 0;;
+  border: 1px;
+  margin: 0;
+  border-style: solid;
+  border-color: white;
+}
+#search-input {
+  width: 80%;
+  float: left;
+  padding: inherit;
+  border: inherit;
+  margin: inherit;
+  height: 44px;
+  padding-left: 16px;
+  background: inherit;
+  color: white;
+}
+#submit {
+  display: block;
+  width: 20% - 16px;
+  float: left;
+  padding: inherit;
+  border: inherit;
+  margin: inherit;
+  height: 44px;
+  background: inherit;
+  color: white;
 }
 
 /* Responsive cases */
