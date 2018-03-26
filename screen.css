@@ -36,15 +36,17 @@ html {
 
 main {
   width: 100%;
-  max-width: 90%;
+  max-width: 94%;
   margin: 0 auto;
-  background-color: #241;
 }
 
 article {
 }
 
 section {
+  background-color: #241;
+  padding: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 ul, ol {
