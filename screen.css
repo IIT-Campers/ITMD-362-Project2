@@ -97,7 +97,9 @@ h4, h5, h6 {
 }
 
 li {
+  padding-bottom: 0.611em;
 }
+
 
 input {
 }
@@ -114,7 +116,12 @@ figcaption {
 form ol,
 form ul {
 }
+#navigation li{//menu horizontal
 
+  width: 33.333333%;
+  float: left;
+
+}
 #search-form ul {
   display:inline-block;
   margin: 0;
