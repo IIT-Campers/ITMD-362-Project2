@@ -18,10 +18,10 @@ Minor third
 
 	Palette:
 Header    : #???
-Reading   : #???
+Reading   : #CBF
 Light read: #???
-Background: #???
-Accent BG : #???
+Background: #120
+Accent BG : #241
 Error BG  : #???
 Tile BG   : #???
 */
@@ -30,9 +30,15 @@ Tile BG   : #???
 html {
   font-size: 1em; /* 16 / 16 */
   line-height: 1.5em; /* 24 / 16 */
+  color: #CBF;
+  background-color: #120;
 }
 
 main {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #241;
 }
 
 article {
@@ -63,6 +69,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: #C93;
 }
 
 h1 {
