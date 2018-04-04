@@ -120,10 +120,34 @@ footer {
 }
 
 /* Navigation Styles */
-nav a {
-  text-decoration: none;
-  color: white;
+#navigation {
+  display: block;
+  width: 100%;
+  background-color: none; /* Add background color */
+  height: 2.75em; /* 44/16 = 2.75 */
 }
+#navigation ul {
+  display: inherit;
+  height: inherit;
+}
+#navigation li {
+  float: left;
+  height: inherit;
+  width: 33.333%;
+}
+#navigation a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  height: 1.5em; /* 24 / 16 */
+  padding-top: 0.625em; /* 10 / 16 = 0.625 */
+  padding-bottom: 0.625em; /* 10 / 16 = 0.625 */
+}
+#navigation a:hover {
+  background-color: #C93;
+}
+
 
 #search-form ul {
   display: inline-block;
@@ -167,5 +191,8 @@ nav a {
 @media screen and (orientation: landscape) { /* Not widely supported */
   html {
     background-image: url("images/bgimage-4272x2403-16x9.jpg");
+  }
+  #no-scroll-footer {
+    position: relative;
   }
 }
