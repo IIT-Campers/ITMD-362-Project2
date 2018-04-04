@@ -112,6 +112,17 @@ figcaption {
 }
 
 /* Specific cases */
+
+/* Header Styles */
+header {
+  width: 94%;
+  margin: 0 auto;
+}
+header * {
+  display: inline;
+  height: 3em;
+}
+
 form ol,
 form ul {
 }
