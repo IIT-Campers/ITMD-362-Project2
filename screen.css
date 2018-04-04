@@ -202,11 +202,19 @@ footer {
   }
 }
 
+@media screen and (min-width: 800px) { /* 800/16=50 */
+  #navigation {
+    display: block;
+    float: right;
+    padding-top: 0.625em; /* 10 / 16 = 0.625 */
+    width: 32em; /* 512/16=32 */
+    background-color: none;
+    height: 2.75em; /* 44/16 = 2.75 */
+  }
+}
+
 @media screen and (orientation: landscape) { /* Not widely supported */
   html {
     background-image: url("images/bgimage-4272x2403-16x9.jpg");
-  }
-  #no-scroll-footer {
-    position: relative;
   }
 }
