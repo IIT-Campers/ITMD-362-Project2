@@ -96,13 +96,27 @@ figcaption {
 header {
   width: 94%;
   margin: 0 auto;
+  padding-bottom: 0.375em; /* 6/16=0.375 */
 }
 header * {
-  display: inline;
-  height: 3em;
+  display: block;
+  height: 3em; /* 48/16=3 */
+}
+#site-logo {
+  height: 3em; /* 48/16=3 */
+  width: 3em; /* 48/16=3 */
+  float: left;
+  text-decoration: none;
+  padding-bottom: 0.375em; /* 6/16=0.375 */
 }
 #site-link {
   text-decoration: none;
+  padding-top: 0.375em; /* 6/16=0.375 */
+  padding-left: 0.375em; /* 6/16=0.375 */
+  display: inline-block;
+}
+#site-link h1 {
+  height: 48px;
 }
 
 /* Footer Styles */
