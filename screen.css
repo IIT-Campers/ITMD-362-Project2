@@ -116,7 +116,7 @@ header * {
   display: inline-block;
 }
 #site-link h1 {
-  height: 48px;
+  height: 3em; /* 48/16=3 */
 }
 
 /* Footer Styles */
@@ -168,7 +168,7 @@ footer {
   margin: 0;
   width: 100%;
   padding: 0;
-  border: 1px;
+  border: 0.0625em; /* 1/16 = 0.0625 */
   border-style: solid;
   border-color: white;
 }
@@ -178,19 +178,19 @@ footer {
   padding: inherit;
   border: inherit;
   margin: inherit;
-  height: 44px;
-  padding-left: 16px;
+  height: 2.75em; /* 44/16 = 2.75 */
+  padding-left: 1em;
   background: inherit;
   color: white;
 }
 #submit {
   display: block;
-  width: 20% - 16px;
+  width: 20% - 1em;
   float: left;
   padding: inherit;
   border: inherit;
   margin: inherit;
-  height: 44px;
+  height: 2.75em; /* 44/16 = 2.75 */
   background: inherit;
   color: white;
 }
@@ -202,7 +202,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px) { /* 800/16=50 */
+@media screen and (min-width: 50em) { /* 800/16=50 */
   #navigation {
     display: block;
     float: right;
