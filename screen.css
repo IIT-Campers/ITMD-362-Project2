@@ -190,3 +190,9 @@ footer {
 
 @media screen and (min-width: 1500px) {
 }
+
+@media screen and (orientation: landscape) { /* Not widely supported */
+  html {
+    background-image: url("images/bgimage-4272x2403-16x9.jpg");
+  }
+}
