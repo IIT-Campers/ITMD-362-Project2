@@ -185,6 +185,12 @@ footer {
 }
 
 /* Responsive cases */
+@media screen and (min-width: 22.25em) { /* 356/16 = 22.25 */
+  footer {
+    height: 3em;
+  }
+}
+
 @media screen and (min-width: 600px) {
 }
 
