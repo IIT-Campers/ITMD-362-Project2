@@ -34,7 +34,13 @@ html {
   color: #CBF;
   background-color: black;
   background-image: url("images/bgimage-1440x2560-9x16-portrait.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
 }
 
 main {
