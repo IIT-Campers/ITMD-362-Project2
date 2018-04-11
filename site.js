@@ -22,6 +22,7 @@ function getCodes() { // Get long/lat from Google Autocomplete Feature
   // console.log("Longitude: "+place.geometry.location.lng());
   return geoLocation;
 }
+$(window).on('load', initialize);
 
 // Translate geocode into an api fetch
 $('#search-form').on('submit', function(e){
