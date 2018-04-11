@@ -6,10 +6,14 @@
 
 //Begin code
 $('html').removeClass('no-js').addClass('js'); //Proves javascript support
-window.autocomplete;
+
+window.autocomplete; //declare global variable
+
 function initialize() { // Google Autocomplete Feature
-  var input = document.getElementById('search-input');
-  window.autocomplete = new google.maps.places.Autocomplete(input);
+  if ($('main').attr('id') === "homepage-content") { //check if we are in the homepage
+    var input = document.getElementById('search-input');
+    window.autocomplete = new google.maps.places.Autocomplete(input);
+  }
 }
 
 function getCodes() { // Get long/lat from Google Autocomplete Feature
@@ -19,9 +23,11 @@ function getCodes() { // Get long/lat from Google Autocomplete Feature
   // console.log("Longitude: "+place.geometry.location.lng());
   return geoLocation;
 }
-$(window).on('load', initialize);
+
 $('#search-form').on('submit', function(e){
   var geoLocation = getCodes(); // long/lat array for ACTIVE Network API
   e.preventDefault(); // prevent page change
   console.log(geoLocation);
 });
+
+$(window).on('load', initialize);
