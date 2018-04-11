@@ -162,7 +162,7 @@ footer {
   background-color: #C93;
 }
 
-
+/* Homepage search bar styling */
 #search-form ul {
   display: inline-block;
   margin: 0;
@@ -193,6 +193,11 @@ footer {
   height: 2.75em; /* 44/16 = 2.75 */
   background: inherit;
   color: white;
+}
+
+/* image styling */
+img {
+  max-width: 90vw;
 }
 
 /* Responsive cases */
