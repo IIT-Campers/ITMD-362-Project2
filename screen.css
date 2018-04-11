@@ -203,11 +203,11 @@ img {
   max-width: 100%;
 
 }
-.js img.shrink {
-  max-height: 33.333vh;
+.js .enlargeable img {
+  max-height: 100vh;
 }
-.js img {
-  max-height: 100%;
+.js .enlargeable img.shrink {
+  max-height: 33.333vh;
 }
 
 /* Responsive cases */
