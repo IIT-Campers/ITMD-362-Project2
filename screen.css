@@ -197,7 +197,17 @@ footer {
 
 /* image styling */
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
+
+}
+.js img.shrink {
+  max-height: 33.333vh;
+}
+.js img {
+  max-height: 100%;
 }
 
 /* Responsive cases */
