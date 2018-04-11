@@ -7,15 +7,14 @@
 //Begin code
 $('html').removeClass('no-js').addClass('js'); //Proves javascript support
 
+// Google autocomplete functionality
 window.autocomplete; //declare global variable
-
 function initialize() { // Google Autocomplete Feature
   if ($('main').attr('id') === "homepage-content") { //check if we are in the homepage
     var input = document.getElementById('search-input');
     window.autocomplete = new google.maps.places.Autocomplete(input);
   }
 }
-
 function getCodes() { // Get long/lat from Google Autocomplete Feature
   var place = window.autocomplete.getPlace();
   var geoLocation = [place.geometry.location.lat(), place.geometry.location.lng()];
@@ -24,10 +23,15 @@ function getCodes() { // Get long/lat from Google Autocomplete Feature
   return geoLocation;
 }
 
+// Translate geocode into an api fetch
 $('#search-form').on('submit', function(e){
   var geoLocation = getCodes(); // long/lat array for ACTIVE Network API
   e.preventDefault(); // prevent page change
   console.log(geoLocation);
 });
 
-$(window).on('load', initialize);
+// enlarge images functionality
+$('.enlargeable img').on('click', function() {
+  console.log ("Image has been clicked");
+  $(this).toggleClass("shrink");
+})
