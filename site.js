@@ -1,3 +1,4 @@
+$('html').removeClass('no-js').addClass('js'); // Proves javascript support
 /* eslint-disable */
 /*! modernizr 3.6.0 (Custom Build) | MIT *
  * https://modernizr.com/download/?-cssgrid_cssgridlegacy-flexbox-setclasses !*/
@@ -5,7 +6,6 @@
 /* eslint-enable */
 
 //  Begin code
-$('html').removeClass('no-js').addClass('js'); // Proves javascript support
 
 // Google autocomplete functionality
 window.autocomplete; // declare global variable
