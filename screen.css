@@ -244,6 +244,27 @@ img {
     background-color: none;
     height: 2.75em; /* 44/16 = 2.75 */
   }
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 56.25em) { /* 900/16=56.25 */
+  main {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 62.5em) { /* 1000/16=62.5 */
+  main {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 68.75em) { /* 1100/16=68.75 */
+  main {
+    width: 50%;
+  }
 }
 
 @media screen and (orientation: landscape) { /* Not widely supported */
