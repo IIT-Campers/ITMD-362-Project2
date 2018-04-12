@@ -183,8 +183,9 @@ footer {
 }
 #search-form ul li * {
   display: block;
-  height: 42px; /* 42/16 = 2.625em */
-  line-height: 42px;
+  font-size: 1em; /* 16px */
+  height: 2.625em; /* 42/16 = 2.625em */
+  line-height: 2.625em; /* 42/16 = 2.625em */
   border: 0;
   margin: 0;
   padding-top: 0;
@@ -203,7 +204,6 @@ footer {
 #search-form #submit {
   display: block;
   width: 20.67308%; /* 49.45/239.2 = 0.2067308 */
-  height: 42px; /* 44/16 = 2.75 */
   background: inherit;
   color: white;
   cursor: pointer;
