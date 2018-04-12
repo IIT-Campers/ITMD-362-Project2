@@ -142,16 +142,13 @@ header * {
 #site-link h1 {
   height: 1.5em; /* 48/32=1.5 */
 }
-a:visited {
-  color: white;
-}
 
 /* Footer Styles */
 footer {
   text-align: center;
+  width: 100%;
   height: 4.5em; /* 72px/16 = 4.5 */
   bottom: 0;
-  background-color: rgba(32, 64, 16, 0.9);
 }
 #scroll-footer {
   position: relative;
