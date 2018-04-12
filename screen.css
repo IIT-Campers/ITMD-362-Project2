@@ -97,6 +97,25 @@ h3 a {
   color: inherit;
 }
 
+/* Reservation Button */
+.reserve {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #C93;
+  padding: 4px;
+  margin: 14px;
+  border-radius: 10%;
+}
+/* .reserve:hover {
+  background-color: white;
+  color: rgba(32, 64, 16, 0.9);
+} */
+
 /* Header Styles */
 header {
   width: 94%;
