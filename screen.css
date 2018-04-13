@@ -86,14 +86,6 @@ h4, h5, h6 {
   line-height: 1.26316em; /* 24 / 19 */
 }
 
-<<<<<<< HEAD
-li {
-  padding-bottom: 0.611em;
-}
-
-
-input {
-=======
 figcaption {
   font-size: 0.8125em; /* 13 / 16 */
   line-height: 1.230769em; /* 16 / 13 */
@@ -103,7 +95,6 @@ figcaption {
 h3 a {
   text-decoration: none;
   color: inherit;
->>>>>>> b90f86fa5831767eff9a487e302b6159de31d78a
 }
 
 /* Reservation Button */
@@ -152,22 +143,6 @@ header * {
   height: 1.5em; /* 48/32=1.5 */
 }
 
-<<<<<<< HEAD
-
-
-li > ul, li > ol {
-  padding-top:  0.611em; /* 11 / 18 = 0.611 */
-  padding-left: 1.222em; /* 22 / 18 = 1.222 */
-  padding-bottom: 0;
-
-}
-
-
-
-/* Specific cases */
-form ol,
-form ul {
-=======
 /* Footer Styles */
 footer {
   text-align: center;
@@ -180,18 +155,8 @@ footer {
 }
 #no-scroll-footer {
   position: absolute;
->>>>>>> b90f86fa5831767eff9a487e302b6159de31d78a
 }
-#navigation li{//menu horizontal
 
-<<<<<<< HEAD
-  width: 33.333333%;
-  float: left;
-
-}
-#search-form ul {
-  display:inline-block;
-=======
 /* Navigation Styles */
 #navigation {
   display: block;
@@ -223,7 +188,6 @@ footer {
 
 /* Homepage search bar styling */
 #search-form {
->>>>>>> b90f86fa5831767eff9a487e302b6159de31d78a
   margin: 0;
   padding: 0;
   border: 0;
@@ -286,24 +250,7 @@ img {
 .js .enlargeable img.shrink {
   max-height: 33.333vh;
 }
-/* Modular */
-nav ul {
-  list-style-type: none;
-}
-nav a {
 
-  display: block;
-  padding-top: 0.611em; /* 11 / 18 = 0.611 */
-  padding-bottom: 0.611em; /* 11 / 18 = 0.611 */
-  background-color: rgba(32, 64, 16, 0.6);
-  text-align: center;
-  text-decoration: none;
-
-}
-
-nav a:hover{
-  background-color:#777777;
-}
 /* Responsive cases */
 @media screen and (min-width: 22.25em) { /* 356/16 = 22.25 */
   footer {
