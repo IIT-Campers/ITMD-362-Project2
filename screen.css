@@ -159,6 +159,10 @@ footer {
 footer a{
   color:inherit;
 }
+images {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
 /* Navigation Styles */
 #navigation {
   display: block;
