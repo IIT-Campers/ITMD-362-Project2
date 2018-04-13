@@ -39,7 +39,7 @@ function getCodes() { // Get long/lat from Google Autocomplete Feature
 // Translate geocode into an api fetch
 $('#search-form').on('submit', function(e){
   var geoLocation = getCodes(); // long/lat array for ACTIVE Network API
-  e.preventDefault(); // prevent page change
+  // e.preventDefault(); // prevent page change
   console.log(geoLocation);
 });
 
