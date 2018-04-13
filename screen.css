@@ -99,7 +99,7 @@ h3 a {
 
 /* Reservation Button */
 .reserve {
-  display: inline-block;
+  display: block;
   height: 2.75em; /* 44/16 = 2.75 */
   line-height: 2.75em; /* 44/16 = 2.75 */
   width: 3.75em; /* 60 /16 = 3.75 */
@@ -109,6 +109,7 @@ h3 a {
   background-color: #C93;
   padding: 0.25em; /* 4/16 = 0.25 */
   margin: 0.875em; /* 14/16 = 0.875 */
+  margin-left: 0;
   border-radius: 10%;
 }
 /* .reserve:hover {
