@@ -95,6 +95,7 @@ h3 a {
   text-decoration: none;
   color: inherit;
 }
+
 /* Reservation Button */
 .reserve {
   display: block;
@@ -155,14 +156,10 @@ footer {
 #no-scroll-footer {
   position: absolute;
 }
+footer a {
+  color: inherit;
+}
 
-footer a{
-  color:inherit;
-}
-images {
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
 /* Navigation Styles */
 #navigation {
   display: block;
@@ -231,6 +228,9 @@ images {
   color: white;
   background: inherit;
 }
+#submit:hover {
+  background-color: #C93;
+}
 #search-form #submit {
   display: block;
   width: 20.67308%; /* 49.45/239.2 = 0.2067308 */
@@ -238,28 +238,23 @@ images {
   color: white;
   cursor: pointer;
 }
-#search-form #submit:hover {
-  background-color: #C93;
-}
+
+/* Checkout Styling */
 #checkout-content input {
   width: 100%;
   padding: 1.25em;
   border: none;
-  background-color: rgba(32, 64, 16, 0.9);
+  background: rgba(0, 0, 25, 0.7);
   color: white;
   box-sizing: border-box;
 }
-
-#checkout-form{
-  background: none;
-}
-
-#checkout-content li input[type="submit"],
 #checkout-content li {
   margin-bottom: 1em;
 }
-
+#checkout-content #submit {
+  margin-top: 1em;
 }
+
 /* image styling */
 img {
   display: block;
@@ -273,6 +268,10 @@ img {
 }
 .js .enlargeable img.shrink {
   max-height: 33.333vh;
+}
+.images {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 /* Responsive cases */
