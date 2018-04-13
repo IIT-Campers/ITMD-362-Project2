@@ -64,7 +64,6 @@ function ValidateCreditCard(number) {
     return false;
   }
   // The Luhn Algorithm. It's so pretty.
-  // It's also DESTRUCTIVE, so add any other checks BEFORE this!
   // Credit to https://gist.github.com/DiegoSalazar
   for (n = number.length - 1; n >= 0; n--) {
     cDigit = number.charAt(n);
@@ -83,3 +82,5 @@ function ValidateCreditCard(number) {
   // In the future, we might want to return an array 
   return true;
 }
+
+
