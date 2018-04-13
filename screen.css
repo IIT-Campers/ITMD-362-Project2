@@ -31,7 +31,6 @@ html { /* stylelint-disable-line no-duplicate-selectors */
   font-size: 1em; /* 16 / 16 */
   font-family: "PT Sans", sans-serif;
   line-height: 1.5em; /* 24 / 16 */
-  color: #CBF;
   color: white;
   background-color: black;
   background-image: url("images/bgimage-1440x2560-9x16-portrait.jpg");
@@ -96,19 +95,19 @@ h3 a {
   text-decoration: none;
   color: inherit;
 }
-
 /* Reservation Button */
 .reserve {
-  display: inline-block;
-  height: 44px;
-  line-height: 44px;
-  width: 60px;
+  display: block;
+  height: 2.75em; /* 44/16 = 2.75 */
+  line-height: 2.75em; /* 44/16 = 2.75 */
+  width: 3.75em; /* 60 /16 = 3.75 */
   text-align: center;
   text-decoration: none;
   color: white;
   background-color: #C93;
-  padding: 4px;
-  margin: 14px;
+  padding: 0.25em; /* 4/16 = 0.25 */
+  margin: 0.875em; /* 14/16 = 0.875 */
+  margin-left: 0;
   border-radius: 10%;
 }
 /* .reserve:hover {
@@ -156,6 +155,7 @@ footer {
 #no-scroll-footer {
   position: absolute;
 }
+<<<<<<< HEAD
 footer a{
   color:inherit;
 }
@@ -163,6 +163,12 @@ images {
   padding-bottom: 1em;
   padding-top: 1em;
 }
+=======
+footer a {
+  color: inherit;
+}
+
+>>>>>>> 2615b88cfb4a5a49c689966bf295d9e91aae0f46
 /* Navigation Styles */
 #navigation {
   display: block;
@@ -249,6 +255,7 @@ images {
   color: white;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 #checkout-form{
   background: none;
 }
@@ -257,6 +264,16 @@ images {
 #checkout-content li input[type="submit"],
 #checkout-content li {
   margin-bottom: 1em;
+=======
+
+
+
+#checkout-content li input[type="submit"],
+#checkout-content li {
+
+  margin-bottom: 1em;
+
+>>>>>>> 2615b88cfb4a5a49c689966bf295d9e91aae0f46
 }
 /* image styling */
 img {
@@ -264,13 +281,16 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-
 }
 .js .enlargeable img {
   max-height: 100vh;
 }
 .js .enlargeable img.shrink {
   max-height: 33.333vh;
+}
+.images {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 /* Responsive cases */

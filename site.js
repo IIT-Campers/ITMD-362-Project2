@@ -31,7 +31,7 @@ $(window).on('load', initialize);
 // Translate geocode into an api fetch
 $('#search-form').on('submit', function(e){
   var geoLocation = getCodes(); // long/lat array for ACTIVE Network API
-  e.preventDefault(); // prevent page change
+  // e.preventDefault(); // prevent page change
   console.log(geoLocation);
 });
 
@@ -40,3 +40,12 @@ $('.enlargeable img').on('click', function() {
   console.log("Image has been clicked");
   $(this).toggleClass("shrink");
 });
+function ValidateEmail(mail)
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
