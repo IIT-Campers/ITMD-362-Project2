@@ -31,7 +31,6 @@ html { /* stylelint-disable-line no-duplicate-selectors */
   font-size: 1em; /* 16 / 16 */
   font-family: "PT Sans", sans-serif;
   line-height: 1.5em; /* 24 / 16 */
-  color: #CBF;
   color: white;
   background-color: black;
   background-image: url("images/bgimage-1440x2560-9x16-portrait.jpg");
@@ -96,7 +95,6 @@ h3 a {
   text-decoration: none;
   color: inherit;
 }
-
 /* Reservation Button */
 .reserve {
   display: block;
@@ -143,9 +141,7 @@ header * {
 #site-link h1 {
   height: 1.5em; /* 48/32=1.5 */
 }
-a:visited {
-  color: white;
-}
+
 /* Footer Styles */
 footer {
   text-align: center;
