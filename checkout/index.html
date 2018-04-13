@@ -22,7 +22,27 @@
       </nav>
     </header>
     <main id="checkout-content">
-
+      <form action= "#null" method="get">
+        <ol>
+          <li>
+            <label for="name"> Name </label>
+            <input placeholder="John Doe" type="text" id="name" name="name"/>
+          </li>
+        <li>
+            <label for="email" > Email </label>
+            <input placeholder="you@example.com" type="email" id="email" name ="email"/>
+          </li>
+        <li>
+            <label for="credit-card-number"> Credit Card Number  </label>
+            <input placeholder="xxx-xxx-xxxx" type="creditcard" id="creditcard" name ="creditcard"/>
+        </li>
+        <li>
+          <label for="cvc"> CVC </label>
+          <input placeholder="xxx" type="cvc" id="cvc" name="cvc"/>
+        </li>
+        </ol>
+        <input type="submit" value="Submit"/>
+      </form>
     </main>
     <footer id="scroll-footer">
       <p>Contact Us | Help/FAQ | Terms of Service | Follow Us</p> <!-- add social media stuff here -->
