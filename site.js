@@ -15,10 +15,20 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
 window.autocomplete; // declare global variable
 function initialize() { // Google Autocomplete Feature
   var input = document.getElementById('search-input');
+
   if ($('main').attr('id') === "homepage-content") { // check if we are in the homepage
     window.autocomplete = new google.maps.places.Autocomplete(input);
   }
+  function setPrice(){
+      var nights = $('#pay').find('[name="nights"]').val();
+      var n = parseInt(nights)
+       $('#price')[0].innerHTML = '$' + (n * 10) + '.00';
+
+  }
+  $('#pay>select').change(setPrice);
+setPrice();
 }
+
 function getCodes() { // Get long/lat from Google Autocomplete Feature
   var place = window.autocomplete.getPlace();
   var geoLocation = [place.geometry.location.lat(), place.geometry.location.lng()];
@@ -31,7 +41,7 @@ $(window).on('load', initialize);
 // Translate geocode into an api fetch
 $('#search-form').on('submit', function(e){
   var geoLocation = getCodes(); // long/lat array for ACTIVE Network API
-  // e.preventDefault(); // prevent page change
+  e.preventDefault(); // prevent page change
   console.log(geoLocation);
 });
 

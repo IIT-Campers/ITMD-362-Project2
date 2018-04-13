@@ -155,9 +155,6 @@ footer {
 #no-scroll-footer {
   position: absolute;
 }
-footer a {
-  color: inherit;
-}
 
 /* Navigation Styles */
 #navigation {
@@ -245,14 +242,14 @@ footer a {
   color: white;
   box-sizing: border-box;
 }
-
+#checkout-form{
+  background: none;
+}
 
 
 #checkout-content li input[type="submit"],
 #checkout-content li {
-
   margin-bottom: 1em;
-
 }
 /* image styling */
 img {
@@ -260,16 +257,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+
 }
 .js .enlargeable img {
   max-height: 100vh;
 }
 .js .enlargeable img.shrink {
   max-height: 33.333vh;
-}
-.images {
-  padding-bottom: 1em;
-  padding-top: 1em;
 }
 
 /* Responsive cases */
