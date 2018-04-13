@@ -95,6 +95,7 @@ h3 a {
   text-decoration: none;
   color: inherit;
 }
+
 /* Reservation Button */
 .reserve {
   display: block;
@@ -155,14 +156,10 @@ footer {
 #no-scroll-footer {
   position: absolute;
 }
-
 footer a{
   color:inherit;
 }
-images {
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
+
 /* Navigation Styles */
 #navigation {
   display: block;
@@ -250,16 +247,15 @@ images {
   box-sizing: border-box;
 }
 
+/* Checkout Styling */
 #checkout-form{
   background: none;
 }
-
 #checkout-content li input[type="submit"],
 #checkout-content li {
   margin-bottom: 1em;
 }
 
-}
 /* image styling */
 img {
   display: block;
@@ -273,6 +269,10 @@ img {
 }
 .js .enlargeable img.shrink {
   max-height: 33.333vh;
+}
+.images {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 /* Responsive cases */
