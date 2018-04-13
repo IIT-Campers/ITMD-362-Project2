@@ -28,31 +28,31 @@
         <ol>
           <li>
             <label for="nights">Nights ($10.00/night)</label>
-            <input value="1" id="nights" type="number" name="nights"/>
+            <input value="1" id="nights" type="number" min="1" max="7" name="nights"/>
           </li>
           <li>
             <label for="name-on-card">Name</label>
-            <input placeholder="John Smith" type="text" id="name-on-card" name="name" />
+            <input placeholder="John Smith" type="text" id="name-on-card" name="name" autocomplete="name" />
           </li>
           <li>
-            <label for="email" >Email</label>
-            <input placeholder="you@example.com" type="email" id="email" name="email" />
+            <label for="email">Email</label>
+            <input placeholder="you@example.com" type="email" id="email" name="email" autocomplete="email" />
           </li>
           <li>
-            <label for="zip">ZIP</label>
-            <input placeholder="60601" type="number" id="zip" name="zip" />
+          <label for="zip">ZIP</label>
+            <input placeholder="60601" type="text" id="zip" name="zip" pattern="[0-9]*" autocomplete="postal-code" />
           </li>
           <li>
             <label for="credit-card-number">Card Number</label>
-            <input placeholder="0123 4567 8910 2345" type="number" id="credit-card-number" name="creditcard" />
+            <input placeholder="0123456789102345" type="text" pattern="[0-9]*" id="credit-card-number" name="creditcard" autocomplete="cc-number" />
           </li>
           <li>
             <label for="cvv">CVV</label>
-            <input placeholder="111" type="number" id="cvv" name="cvv" />
+            <input placeholder="111" type="text" id="cvv" name="cvv" pattern="[0-9]*" autocomplete="cc-csc" />
           </li>
           <li>
             <label for="date"> Card Expiration</label>
-            <input placeholder="01/18"id="date" type="text" name="expiration" />
+            <input placeholder="01/18"id="date" type="text" name="expiration" autocomplete="cc-exp" />
           </li>
           <li>
             <input id="submit" type="submit" value="Reserve" />
