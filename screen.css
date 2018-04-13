@@ -158,6 +158,9 @@ footer {
 #no-scroll-footer {
   position: absolute;
 }
+footer a {
+  color: inherit;
+}
 
 /* Navigation Styles */
 #navigation {
