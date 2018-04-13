@@ -20,9 +20,13 @@ function initialize() { // Google Autocomplete Feature
     window.autocomplete = new google.maps.places.Autocomplete(input);
   }
   function setPrice(){
-      var nights = $('#pay option[name="nights"]')
+      var nights = $('#pay').find('[name="nights"]').val();
+      var n = parseInt(nights)
+       $('#price')[0].innerHTML = '$' + (n * 10) + '.00';
 
   }
+  $('#pay>select').change(setPrice);
+setPrice();
 }
 
 function getCodes() { // Get long/lat from Google Autocomplete Feature
