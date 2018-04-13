@@ -40,12 +40,13 @@ $('.enlargeable img').on('click', function() {
   console.log("Image has been clicked");
   $(this).toggleClass("shrink");
 });
+
 function ValidateEmail(mail)
 {
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
   {
-    return (true)
+    return (true);
   }
-    alert("You have entered an invalid email address!")
-    return (false)
+  alert("You have entered an invalid email address!");
+  return (false);
 }
