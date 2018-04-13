@@ -32,27 +32,27 @@
           </li>
           <li>
             <label for="name-on-card">Name</label>
-            <input placeholder="John Smith" type="text" id="name-on-card" name="name" autocomplete="name" />
+            <input placeholder="John Smith" type="text" id="name-on-card" name="name" autocomplete="name" required />
           </li>
           <li>
             <label for="email">Email</label>
-            <input placeholder="you@example.com" type="email" id="email" name="email" autocomplete="email" />
+            <input placeholder="you@example.com" type="email" id="email" name="email" autocomplete="email" required />
           </li>
           <li>
           <label for="zip">ZIP</label>
-            <input placeholder="60601" type="text" id="zip" name="zip" pattern="[0-9]*" autocomplete="postal-code" />
+            <input placeholder="60601" type="tel" id="zip" name="zip" pattern="[0-9][0-9][0-9][0-9][0-9]" autocomplete="postal-code" required />
           </li>
           <li>
             <label for="credit-card-number">Card Number</label>
-            <input placeholder="0123456789102345" type="text" pattern="[0-9]*" id="credit-card-number" name="creditcard" autocomplete="cc-number" />
+            <input placeholder="0123456789102345" type="tel" pattern="[0-9]*" id="credit-card-number" name="creditcard" autocomplete="cc-number" required />
           </li>
           <li>
             <label for="cvv">CVV</label>
-            <input placeholder="111" type="text" id="cvv" name="cvv" pattern="[0-9]*" autocomplete="cc-csc" />
+            <input placeholder="111" type="tel" id="cvv" name="cvv" pattern="[0-9[0-9][0-9]" autocomplete="cc-csc" required />
           </li>
           <li>
             <label for="date"> Card Expiration</label>
-            <input placeholder="01/18"id="date" type="text" name="expiration" autocomplete="cc-exp" />
+            <input placeholder="01/18" id="date" type="text" name="expiration" pattern="[0-9][0-9]/[0-9][0-9]" autocomplete="cc-exp" required />
           </li>
           <li>
             <input id="submit" type="submit" value="Reserve" />
