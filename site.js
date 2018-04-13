@@ -60,23 +60,26 @@ function ValidateCreditCard(number) {
   var n;
   number = number.replace(/\D/g, "");
   // Length check
-  if(number.length < 14 || number.length > 19)
+  if(number.length < 14 || number.length > 19) {
     return false;
+  }
   // The Luhn Algorithm. It's so pretty.
   // It's also DESTRUCTIVE, so add any other checks BEFORE this!
   // Credit to https://gist.github.com/DiegoSalazar
   for (n = number.length - 1; n >= 0; n--) {
     cDigit = number.charAt(n);
     nDigit = parseInt(cDigit, 10);
-    if(bEven)
-      if ((nDigit *= 2) > 9)
+    if(bEven) {
+      if ((nDigit *= 2) > 9) {
         nDigit -= 9;
+      }
+    }
     nCheck += nDigit;
     bEven = !bEven;
   }  
-  if((nCheck % 10) == 0)
+  if(!((nCheck % 10) == 0)) {
     return false;
-  // If you pass Luhn's and the length check, good enough
+  }
   // In the future, we might want to return an array 
   return true;
 }
