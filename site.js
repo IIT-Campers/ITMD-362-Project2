@@ -92,3 +92,40 @@ function ValidateCVV(number) {
   }
   return true;
 }
+
+// Would be a good idea to replace this with an API check like in class
+function ValidateZIP(number) {
+  // Variables
+  number = number.replace(/\D/g, "");
+  // Length check
+  if(!(number.length == 5)) {
+    return false;
+  }
+  return true;
+}
+
+function ValidateExpirationDate(date) {
+  var testDate = new Date(); 
+  var currentDate = new Date();
+  var cardMonth;
+  var cardYear;
+  if(/^([0-9]){2}\/([0-9]){2}$/.test(date)) {
+    cardMonth = parseInt(date.substring(0,2));
+    cardYear = parseInt(date.substring(3));
+    if(cardYear > currentDate.getFullYear() % 100) {
+      return true;
+    }
+    else if(cardYear == currentDate.getFullYear() % 100) {
+      if(cardMonth > currentDate.getMonth()+1) {
+        return true;
+      }
+      else if(cardMonth == currentDate.getMonth()+1) {
+        testDate.setDate(testDate.getDate()+1);
+        if(testDate.getMonth() == currentDate.getMonth()) {
+          return true;
+        }
+      }
+    }
+  }
+  return false;
+}
