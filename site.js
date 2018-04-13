@@ -49,13 +49,93 @@ $('.enlargeable img').on('click', function() {
   $(this).toggleClass("shrink");
 });
 
-// email validation functionality
-function ValidateEmail(mail) { // this function was never used ...
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.emailAddr.value)) { // does not pass eslint validation
+function ValidateEmail(mail)
+{
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
     return (true);
   }
-  console.log("Invalid email address");
+  alert("You have entered an invalid email address!");
   return (false);
+}
+
+function ValidateCreditCard(number) {
+  // Variables
+  var nCheck = 0;
+  var nDigit = 0;
+  var cDigit;
+  var bEven = false;
+  var n;
+  number = number.replace(/\D/g, "");
+  // Length check
+  if(number.length < 13 || number.length > 19) {
+    return false;
+  }
+  // The Luhn Algorithm. It's so pretty.
+  // Credit to https://gist.github.com/DiegoSalazar
+  for (n = number.length - 1; n >= 0; n--) {
+    cDigit = number.charAt(n);
+    nDigit = parseInt(cDigit, 10);
+    if(bEven) {
+      if ((nDigit *= 2) > 9) {
+        nDigit -= 9;
+      }
+    }
+    nCheck += nDigit;
+    bEven = !bEven;
+  }  
+  if(!((nCheck % 10) == 0)) {
+    return false;
+  }
+  // In the future, we might want to return an array 
+  return true;
+}
+
+function ValidateCVV(number) {
+  // Variables
+  number = number.replace(/\D/g, "");
+  // Length check
+  if(number.length < 3 || number.length > 4) {
+    return false;
+  }
+  return true;
+}
+
+// Would be a good idea to replace this with an API check like in class
+function ValidateZIP(number) {
+  // Variables
+  number = number.replace(/\D/g, "");
+  // Length check
+  if(!(number.length == 5)) {
+    return false;
+  }
+  return true;
+}
+
+function ValidateExpirationDate(date) {
+  var testDate = new Date(); 
+  var currentDate = new Date();
+  var cardMonth;
+  var cardYear;
+  if(/^([0-9]){2}\/([0-9]){2}$/.test(date)) {
+    cardMonth = parseInt(date.substring(0,2));
+    cardYear = parseInt(date.substring(3));
+    if(cardYear > currentDate.getFullYear() % 100) {
+      return true;
+    }
+    else if(cardYear == currentDate.getFullYear() % 100) {
+      if(cardMonth > currentDate.getMonth()+1) {
+        return true;
+      }
+      else if(cardMonth == currentDate.getMonth()+1) {
+        testDate.setDate(testDate.getDate()+1);
+        if(testDate.getMonth() == currentDate.getMonth()) {
+          return true;
+        }
+      }
+    }
+  }
+  return false;
 }
 
 $(window).on('load', initialize);
