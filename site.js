@@ -50,3 +50,33 @@ function ValidateEmail(mail)
   alert("You have entered an invalid email address!");
   return (false);
 }
+
+function ValidateCreditCard(number) {
+  // Variables
+  var nCheck = 0;
+  var nDigit = 0;
+  var cDigit;
+  var bEven = false;
+  var n;
+  number = number.replace(/\D/g, "");
+  // Length check
+  if(number.size < 14 && number.size > 19)
+    return false;
+  // The Luhn Algorithm. It's so pretty.
+  // It's also DESTRUCTIVE, so add any other checks BEFORE this!
+  // Credit to https://gist.github.com/DiegoSalazar
+  for (n = value.length - 1; n >= 0; n--) {
+    cDigit = value.charAt(n);
+    nDigit = parseInt(cDigit, 10);
+    if(bEven)
+      if ((nDigit *= 2) > 9)
+        nDigit -= 9;
+    nCheck += nDigit;
+    bEven = !bEven;
+  }  
+  if((nCheck % 10) == 0)
+    return false;
+  // If you pass Luhn's and the length check, good enough
+  // In the future, we might want to return an array 
+  return true;
+}
