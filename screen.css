@@ -156,6 +156,13 @@ footer {
   position: absolute;
 }
 
+footer a{
+  color:inherit;
+}
+images {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
 /* Navigation Styles */
 #navigation {
   display: block;
@@ -242,14 +249,16 @@ footer {
   color: white;
   box-sizing: border-box;
 }
+
 #checkout-form{
   background: none;
 }
 
-
 #checkout-content li input[type="submit"],
 #checkout-content li {
   margin-bottom: 1em;
+}
+
 }
 /* image styling */
 img {
