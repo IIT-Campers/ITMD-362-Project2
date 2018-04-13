@@ -50,8 +50,8 @@ $('.enlargeable img').on('click', function() {
 });
 
 // email validation functionality
-function ValidateEmail(mail) {
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.emailAddr.value)) {
+function ValidateEmail(mail) { // this function was never used ...
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.emailAddr.value)) { // does not pass eslint validation
     return (true);
   }
   console.log("Invalid email address");
