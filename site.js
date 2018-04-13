@@ -60,7 +60,7 @@ function ValidateCreditCard(number) {
   var n;
   number = number.replace(/\D/g, "");
   // Length check
-  if(number.length < 14 || number.length > 19) {
+  if(number.length < 13 || number.length > 19) {
     return false;
   }
   // The Luhn Algorithm. It's so pretty.
