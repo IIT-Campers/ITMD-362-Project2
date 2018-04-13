@@ -15,10 +15,19 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
 window.autocomplete; // declare global variable
 function initialize() { // Google Autocomplete Feature
   var input = document.getElementById('search-input');
+  var google = google;
   if ($('main').attr('id') === "homepage-content") { // check if we are in the homepage
     window.autocomplete = new google.maps.places.Autocomplete(input);
   }
+  function setPrice() {
+    var nights = $('#pay').find('[name="nights"]').val();
+    var n = parseInt(nights);
+    $('#price')[0].innerHTML = '$' + (n * 10) + '.00';
+  }
+  $('#pay>select').change(setPrice); // why is this even in here!!!???
+  setPrice(); //  same for this!!!!
 }
+
 function getCodes() { // Get long/lat from Google Autocomplete Feature
   var place = window.autocomplete.getPlace();
   var geoLocation = [place.geometry.location.lat(), place.geometry.location.lng()];
@@ -26,7 +35,6 @@ function getCodes() { // Get long/lat from Google Autocomplete Feature
   // console.log("Longitude: "+place.geometry.location.lng());
   return geoLocation;
 }
-$(window).on('load', initialize);
 
 // Translate geocode into an api fetch
 $('#search-form').on('submit', function(e){
@@ -40,12 +48,14 @@ $('.enlargeable img').on('click', function() {
   console.log("Image has been clicked");
   $(this).toggleClass("shrink");
 });
-function ValidateEmail(mail)
-{
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-  {
-    return (true)
+
+// email validation functionality
+function ValidateEmail(mail) { // this function was never used ...
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.emailAddr.value)) { // does not pass eslint validation
+    return (true);
   }
-    alert("You have entered an invalid email address!")
-    return (false)
+  console.log("Invalid email address");
+  return (false);
 }
+
+$(window).on('load', initialize);
