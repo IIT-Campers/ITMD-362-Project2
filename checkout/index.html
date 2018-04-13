@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
-    <title>Checkout</title>
+    <title>Explore</title>
     <meta charset="utf-8" />
     <meta name="viewport"
     content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
@@ -21,42 +21,51 @@
         </ul>
       </nav>
     </header>
-    <main id="checkout-content">
-      <form action= "#null" method="get">
+  <main id="checkout-content">
+    <section id="checkout-form">
+      <h2>Checkout</h2>
+      <form action= "#null" method="put" id="pay">
         <ol>
           <li>
-            <label for="name-on-card"> Name  </label>
-            <input placeholder="Name on Card" type="text" id="name-on-card" name="name"/>
+            <label for="nights">Nights ($10.00/night)</label>
+            <input value="1" id="nights" type="number" min="1" max="7" name="nights"/>
           </li>
-        <li>
-            <label for="email" > Email </label>
-            <input placeholder="you@example.com" type="email" id="email" name="email"/>
-        </li>
-        <li>
-          <label for="zip"> ZIP </label>
-          <input placeholder="ZIP Code" type="text" id="zip"/>
-        </li>
-        <li>
-            <label for="credit-card-number"> Card Number  </label>
-            <input placeholder="xxx-xxx-xxxx" type="creditcard" id="credit-card-number" name="creditcard"/>
-        </li>
-        <li>
-          <label for="cvc"> CVC </label>
-          <input placeholder="xxx" type="cvc" id="cvc" name="cvc"/>
-        </li>
-        <li>
-          <label for="date"> Card card-expiration</label>
-          <input placeholder="xx/xx"  id="date" type="date"/>
-        </li>
+          <li>
+            <label for="name-on-card">Name</label>
+            <input placeholder="John Smith" type="text" id="name-on-card" name="name" autocomplete="name" required />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input placeholder="you@example.com" type="email" id="email" name="email" autocomplete="email" required />
+          </li>
+          <li>
+          <label for="zip">ZIP</label>
+            <input placeholder="60601" type="tel" id="zip" name="zip" pattern="[0-9][0-9][0-9][0-9][0-9]" autocomplete="postal-code" required />
+          </li>
+          <li>
+            <label for="credit-card-number">Card Number</label>
+            <input placeholder="0123456789102345" type="tel" pattern="[0-9]*" id="credit-card-number" name="creditcard" autocomplete="cc-number" required />
+          </li>
+          <li>
+            <label for="cvv">CVV</label>
+            <input placeholder="123" type="tel" id="cvv" name="cvv" pattern="[0-9[0-9][0-9][0-9]" autocomplete="cc-csc" required />
+          </li>
+          <li>
+            <label for="date"> Card Expiration</label>
+            <input placeholder="01/18" id="date" type="text" name="expiration" pattern="[0-9][0-9]/[0-9][0-9]" autocomplete="cc-exp" required />
+          </li>
+          <li>
+            <input id="submit" type="submit" value="Reserve" />
+          </li>
         </ol>
-        <input type="submit" value="Submit"/>
       </form>
-    </main>
-    <footer id="scroll-footer">
-      <p> <a href="../contact">Contact Us</a> | <a href="../terms">Terms of Service</a> </p>
-      <p>&copy; 2018 IIT CAMPERS LLC </p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../site.js"></script>
+    </section>
+  </main>
+  <footer id="scroll-footer">
+    <p><a href="../contact">Contact Us</a> | <a href="../terms">Terms of Service</a></p>
+    <p>&copy; 2018 IIT CAMPERS LLC</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../site.js"></script>
   </body>
 </html>
