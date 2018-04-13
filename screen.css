@@ -142,9 +142,7 @@ header * {
 #site-link h1 {
   height: 1.5em; /* 48/32=1.5 */
 }
-a:visited {
-  color: white;
-}
+
 /* Footer Styles */
 footer {
   text-align: center;
@@ -158,7 +156,9 @@ footer {
 #no-scroll-footer {
   position: absolute;
 }
-
+footer a{
+  color:inherit;
+}
 /* Navigation Styles */
 #navigation {
   display: block;
@@ -237,7 +237,23 @@ footer {
 #search-form #submit:hover {
   background-color: #C93;
 }
+#checkout-content input {
+  width: 100%;
+  padding: 1.25em;
+  border: none;
+  background-color: rgba(32, 64, 16, 0.9);
+  color: white;
+  box-sizing: border-box;
+}
+#checkout-form{
+  background: none;
+}
 
+
+#checkout-content li input[type="submit"],
+#checkout-content li {
+  margin-bottom: 1em;
+}
 /* image styling */
 img {
   display: block;
