@@ -142,9 +142,6 @@ header * {
 #site-link h1 {
   height: 1.5em; /* 48/32=1.5 */
 }
-a:visited {
-  color: white;
-}
 
 /* Footer Styles */
 footer {
