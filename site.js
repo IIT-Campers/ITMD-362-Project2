@@ -65,8 +65,8 @@ function ValidateCreditCard(number) {
   // The Luhn Algorithm. It's so pretty.
   // It's also DESTRUCTIVE, so add any other checks BEFORE this!
   // Credit to https://gist.github.com/DiegoSalazar
-  for (n = value.length - 1; n >= 0; n--) {
-    cDigit = value.charAt(n);
+  for (n = number.length - 1; n >= 0; n--) {
+    cDigit = number.charAt(n);
     nDigit = parseInt(cDigit, 10);
     if(bEven)
       if ((nDigit *= 2) > 9)
