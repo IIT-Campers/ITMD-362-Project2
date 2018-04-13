@@ -83,4 +83,12 @@ function ValidateCreditCard(number) {
   return true;
 }
 
-
+function ValidateCVV(number) {
+  // Variables
+  number = number.replace(/\D/g, "");
+  // Length check
+  if(number.length < 3 || number.length > 4) {
+    return false;
+  }
+  return true;
+}
