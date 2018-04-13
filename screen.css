@@ -112,6 +112,17 @@ figcaption {
   line-height: 1.230769em; /* 16 / 13 */
 }
 
+
+
+li > ul, li > ol {
+  padding-top:  0.611em; /* 11 / 18 = 0.611 */
+  padding-left: 1.222em; /* 22 / 18 = 1.222 */
+  padding-bottom: 0;
+
+}
+
+
+
 /* Specific cases */
 form ol,
 form ul {
@@ -154,7 +165,24 @@ form ul {
   background: inherit;
   color: white;
 }
+/* Modular */
+nav ul {
+  list-style-type: none;
+}
+nav a {
 
+  display: block;
+  padding-top: 0.611em; /* 11 / 18 = 0.611 */
+  padding-bottom: 0.611em; /* 11 / 18 = 0.611 */
+  background-color: rgba(32, 64, 16, 0.6);
+  text-align: center;
+  text-decoration: none;
+
+}
+
+nav a:hover{
+  background-color:#777777;
+}
 /* Responsive cases */
 @media screen and (min-width: 600px) {
 }
