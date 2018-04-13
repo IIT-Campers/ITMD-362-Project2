@@ -235,7 +235,23 @@ footer {
 #search-form #submit:hover {
   background-color: #C93;
 }
+#checkout-content input {
+  width: 100%;
+  padding: 1.25em;
+  border: none;
+  background-color: rgba(32, 64, 16, 0.9);
+  color: white;
+  box-sizing: border-box;
+}
 
+
+
+#checkout-content li input[type="submit"],
+#checkout-content li {
+
+  margin-bottom: 1em;
+
+}
 /* image styling */
 img {
   display: block;
