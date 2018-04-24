@@ -115,7 +115,21 @@ h3 a {
   background-color: white;
   color: rgba(32, 64, 16, 0.9);
 } */
-
+.campsites {
+  display: flex;
+  justify-content: center;
+  height: 2.75em; /* 44/16 = 2.75 */
+  line-height: 2.75em; /* 44/16 = 2.75 */
+  width: 8em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #C93;
+  padding: 0.25em; /* 4/16 = 0.25 */
+  margin: 0 auto;
+  margin-top: 1em;
+  border-radius: 5%;
+}
 /* Header Styles */
 header {
   width: 94%;
